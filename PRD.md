@@ -31,3 +31,9 @@
 - A confirmation that arrives after the claim expires is rejected.
 - Only the buyer holding an active claim can confirm the handoff.
 - `sold` is terminal and cannot change back.
+
+## Known Limitations
+- Identity is a typed name, not a login. The seller override checks the name sent in the request, so anyone who knows the seller's name can impersonate them. A production version would use authenticated users, with the server deriving identity from a session or token.
+- State is in memory and resets when the server restarts.
+- The 30-second claim hold is a mock timer for demonstration. A real app would use a longer window.
+- Claims are not tied to a verified campus identity.
