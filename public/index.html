@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dorm Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dorm Marketplace</h1>
+    <label>Your name <input id="userName" placeholder="e.g. Ana"></label>
+  </header>
+  <main>
+    <section>
+      <h2>List an item</h2>
+      <form id="listForm">
+        <input id="title" placeholder="Title" required>
+        <input id="category" placeholder="Category (e.g. Books)">
+        <input id="condition" placeholder="Condition (e.g. Good)">
+        <button type="submit">List item</button>
+      </form>
+    </section>
+    <section>
+      <h2>Items</h2>
+      <p id="message" role="alert"></p>
+      <ul id="items"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
